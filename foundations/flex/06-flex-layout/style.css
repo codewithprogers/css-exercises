@@ -38,6 +38,12 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: column; /* stacks .header, .content, and .footer vertically */
+  min-height: 100vh; /* makes sure the container always takes at least the full viewport height */
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -55,6 +61,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex: 1; /* expands and pushes footer down when there's extra space */
  }
  
  button {
