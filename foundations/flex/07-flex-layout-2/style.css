@@ -49,6 +49,9 @@ li {
 
 .content {
   display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 32px;
 }
 
 .card {
